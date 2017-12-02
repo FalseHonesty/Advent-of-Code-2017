@@ -19,13 +19,13 @@ const data = [
 
 var sum = 0;
 
-for i in 0..len(data) - 1:
+for i in 0..<len(data):
     var divis = 0;
 
-    for j in 0..len(data[i]) - 1:
+    for j in 0..<len(data[i]):
         var val = data[i][j];
         
-        for k in j + 1..len(data[i]) - 1:
+        for k in j + 1..<len(data[i]):
             var compareVal = data[i][k]
 
             if compareVal mod val == 0:
